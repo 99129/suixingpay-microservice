@@ -37,4 +37,4 @@ zuul:
       path: /suixingpay-employee/**
       url: suixingpay-employee
 test:
-  name: 刘德华
+  name: 郭富城
