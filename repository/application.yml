@@ -36,3 +36,5 @@ zuul:
       stripPrefix: true
       path: /suixingpay-employee/**
       url: suixingpay-employee
+test:
+  name: 刘德华
