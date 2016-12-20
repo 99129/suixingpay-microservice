@@ -17,9 +17,9 @@ hystrix:
             maxConcurrentRequests: 200
   threadpool:
     default:
-      coreSize: 203
-      maxQueueSize: 202
-      queueSizeRejectionThreshold: 201
+      coreSize: 200
+      maxQueueSize: 200
+      queueSizeRejectionThreshold: 200
 #路由表
 zuul:
   ignoredServices: "*"
