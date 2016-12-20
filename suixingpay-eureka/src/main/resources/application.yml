@@ -2,9 +2,9 @@ server:
   port: 8761
 spring:
   application:
-    name: test-eureka
+    name: suixingpay-eureka
   profiles:
-    active: @profilesActive@
+    active: sit
 eureka:
   client:
     register-with-eureka: false

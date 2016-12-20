@@ -1,15 +1,38 @@
+#ribbon配置
+ribbon:
+  maxAutoRetries: 1
+  ReadTimeout: 60000
+  ConnectTimeout: 6000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 200
+  threadpool:
+    default:
+      coreSize: 200
+      maxQueueSize: 200
+      queueSizeRejectionThreshold: 200
+#路由表
 zuul:
   ignoredServices: "*"
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
   routes:
-    test-server-1:
+    suixingpay-department:
       stripPrefix: true
-      path: /test-server-1/**
-      url: test-server-1
-    test-user-server:
+      path: /suixingpay-department/**
+      url: suixingpay-department
+    suixingpay-employee:
       sensitiveHeaders:
       stripPrefix: true
-      path: /test-user-server/**
-      url: test-user-server
+      path: /suixingpay-employee/**
+      url: suixingpay-employee

@@ -4,7 +4,7 @@ spring:
   application:
     name: suixingpay-config
   profiles:
-    active: @profilesActive@
+    active: sit
 
 ---
 spring:
@@ -24,7 +24,7 @@ spring:
 #          username: ""
 #          password: ""
           timeout: 60000
-          uri: https://github.com/99129/test.git
+          uri: https://github.com/99129/suixingpay-microservice.git
           search-paths: repository
           default-label: ${label:develop}
 
