@@ -39,4 +39,4 @@ zuul:
       path: /suixingpay-employee/**
       url: suixingpay-employee
 test:
-  name: 郭富城
+  name: 研发
