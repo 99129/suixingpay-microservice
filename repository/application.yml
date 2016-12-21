@@ -15,8 +15,8 @@ hystrix:
         isolation:
           semaphore:
             maxConcurrentRequests: 200
-      circuitBreaker:
-        errorThresholdPercentage: 90
+#      circuitBreaker:
+#        errorThresholdPercentage: 90
   threadpool:
     default:
       coreSize: 200
