@@ -34,7 +34,7 @@ zuul:
       path: /suixingpay-department/**
       url: suixingpay-department
     suixingpay-employee:
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitiveHeaders:
       stripPrefix: true
       path: /suixingpay-employee/**
       url: suixingpay-employee
